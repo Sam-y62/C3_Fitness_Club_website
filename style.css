@@ -17,8 +17,18 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* 🔥 add this */
   padding: 20px 60px;
-  z-index: 10;
+  z-index: 100;
+
+  background: transparent; /* 🔥 default */
+  transition: all 0.3s ease; /* 🔥 smooth change */
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 60px; /* 🔥 slightly shrink on scroll */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .navbar a {
@@ -27,9 +37,8 @@ body {
   text-decoration: none;
 }
 .nav-logo {
-  height:90px;   /* 🔥 control size */
-  width: auto;
-  object-fit: contain;
+  height: 60px;
+  transition: 0.3s;
 }
 
 /* HERO */
