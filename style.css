@@ -163,6 +163,41 @@ body {
   border-color: #ffd700;
   transform: translateY(-5px);
 }
+.about {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* PLANS */
 .plans {
@@ -307,6 +342,14 @@ body {
   .map-container iframe {
     width: 100%;
     height: 300px;
+  }
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-row.reverse {
+    flex-direction: column;
   }
 
 }
