@@ -23,3 +23,21 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+const cards = document.querySelectorAll('.price-card');
+const container = document.querySelector('.pricing');
+cards[0].classList.add('active');
+
+container.addEventListener('scroll', () => {
+  let center = container.scrollLeft + container.offsetWidth / 2;
+
+  cards.forEach(card => {
+    let cardCenter = card.offsetLeft + card.offsetWidth / 2;
+
+    if (Math.abs(center - cardCenter) < card.offsetWidth / 2) {
+      card.classList.add('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+});
