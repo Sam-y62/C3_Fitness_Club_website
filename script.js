@@ -41,3 +41,23 @@ container.addEventListener('scroll', () => {
     }
   });
 });
+
+
+const gallery = document.querySelector('.gallery-scroll');
+const items = document.querySelectorAll('.gallery-card');
+
+gallery.addEventListener('scroll', () => {
+  let center = gallery.scrollLeft + gallery.offsetWidth / 2;
+
+  items.forEach(item => {
+    let itemCenter = item.offsetLeft + item.offsetWidth / 2;
+
+    if (Math.abs(center - itemCenter) < item.offsetWidth / 2) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+});
+
+items[0].classList.add('active');
