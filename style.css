@@ -17,12 +17,12 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* 🔥 add this */
+  align-items: center; 
   padding: 20px 60px;
   z-index: 100;
 
-  background: transparent; /* 🔥 default */
-  transition: all 0.3s ease; /* 🔥 smooth change */
+  background: transparent; 
+  transition: all 0.3s ease; 
 }
 
 .navbar.scrolled {
@@ -67,7 +67,7 @@ body {
   width: 50%;
   object-fit: cover;
   filter: blur(25px);
-  transform: scale(1.2); /* avoid blur edges */
+  transform: scale(1.2); 
   z-index: 1;
 }
 
@@ -94,7 +94,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 🔥 center properly */
+  transform: translate(-50%, -50%); 
 
   width: 100%;
   text-align: center;
@@ -271,7 +271,7 @@ body {
 }
 
 .gallery-card {
-  flex: 0 0 350px;   /* 🔥 fixed desktop width */
+  flex: 0 0 350px;   
   height: 420px;
 
   border-radius: 20px;
@@ -285,8 +285,8 @@ body {
 
 .gallery-card img {
   width: 100%;
-  height: 100%;           /* 🔥 fill full card */
-  object-fit: cover;      /* 🔥 crop nicely */
+  height: 100%;           
+  object-fit: cover;      
 
   display: block;
 }
@@ -339,7 +339,7 @@ body {
   }
 
   .navbar nav {
-    display: none; /* 🔥 hide menu for now */
+    display: none; 
   }
 
   /* HERO */
@@ -348,10 +348,10 @@ body {
   }
 
   .hero-title {
-    font-size: 9vw; /* 🔥 better balance */
+    font-size: 9vw; 
   }
  .hero-content {
-    top: 55%; /* slight adjust for phone */
+    top: 55%; 
     transform: translate(-50%, -50%);
     padding: 0 10px;
   }
@@ -361,7 +361,7 @@ body {
   }
 
     .cta-buttons {
-    flex-direction: row; /* 🔥 keep side-by-side */
+    flex-direction: row; 
   }
 
   .btn {
@@ -370,9 +370,8 @@ body {
     font-size: 14px;
   }
 
-  /* 🔥 VIDEO FIX (VERY IMPORTANT) */
   .side-video {
-    display: none; /* remove blur sides */
+    display: none; 
   }
 
   .main-video {
@@ -384,7 +383,7 @@ body {
 
   /* ABOUT */
   .features {
-    grid-template-columns: 1fr; /* stack */
+    grid-template-columns: 1fr; 
   }
 
   /* PLANS */
@@ -394,7 +393,7 @@ body {
 
   .pricing {
     display: flex;
-    flex-wrap: nowrap;            /* 🔥 no wrapping */
+    flex-wrap: nowrap;            
     overflow-x: auto;
     gap: 20px;
 
@@ -410,7 +409,7 @@ body {
   }
 
   .price-card {
-    flex: 0 0 85%;               /* 🔥 key: proper width */
+    flex: 0 0 85%;               
     max-width: 280px;
 
     scroll-snap-align: center;
@@ -432,7 +431,7 @@ body {
     grid-template-columns: 1fr;
   }
   .gallery-card {
-    flex: 0 0 97%;   /* 🔥 wider on phone */
+    flex: 0 0 97%;   
     height: 420px;
   }
 
