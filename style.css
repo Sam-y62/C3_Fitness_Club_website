@@ -410,7 +410,7 @@ body {
   }
 
   .price-card {
-    flex: 0 0 70%;               /* 🔥 key: proper width */
+    flex: 0 0 85%;               /* 🔥 key: proper width */
     max-width: 280px;
 
     scroll-snap-align: center;
@@ -430,6 +430,10 @@ body {
   /* GALLERY */
   .gallery {
     grid-template-columns: 1fr;
+  }
+  .gallery-card {
+    flex: 0 0 97%;   /* 🔥 wider on phone */
+    height: 420px;
   }
 
   /* MAP */
