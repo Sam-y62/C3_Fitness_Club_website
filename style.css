@@ -271,20 +271,23 @@ body {
 }
 
 .gallery-card {
-  flex: 0 0 80%;        /* 🔥 card width */
-  max-width: 300px;
+  flex: 0 0 350px;   /* 🔥 fixed desktop width */
+  height: 420px;
 
   border-radius: 20px;
   overflow: hidden;
 
   scroll-snap-align: center;
   transition: transform 0.3s ease;
+
+  position: relative;
 }
 
 .gallery-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%;           /* 🔥 fill full card */
+  object-fit: cover;      /* 🔥 crop nicely */
+
   display: block;
 }
 
